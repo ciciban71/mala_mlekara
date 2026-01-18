@@ -1,0 +1,94 @@
+---
+import PlaceholderImage from './PlaceholderImage.astro';
+---
+
+<section id="o-nama" class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Heading -->
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-deepBlue mb-4">
+        Naša priča
+      </h2>
+      <p class="text-xl md:text-2xl font-serif italic text-primaryBlue">
+        Tradicija, kvalitet i ljubav prema zemlji
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+      <!-- Left Column - Image Placeholder -->
+      <div>
+        <PlaceholderImage
+          type="image"
+          label="Porodica Janić na farmi"
+          aspectRatio="4/3"
+          class="w-full"
+        />
+      </div>
+
+      <!-- Right Column - Content -->
+      <div class="space-y-6">
+        <p class="text-base md:text-lg text-deepBlue/90 leading-relaxed">
+          Naša priča počinje davne 1985. godine, kada je deda Miloš odlučio da porodično stočarstvo pretvori u nešto više. Sa tri krave, jednim drvenim kolivcetom i velikim snovima, položeni su temelji ono što je danas Mala Mlekara Janić - porodična farma koju vode tri generacije sa istim ponosom i ljubavlju.
+        </p>
+
+        <p class="text-base md:text-lg text-deepBlue/90 leading-relaxed">
+          Danas, na 15 hektara zelenih pašnjaka u Šumadiji, naših 25 muznih krava uživa u slobodnom pašenju i brižnom negovanju. Svako jutro počinje pre svitanja - sa svežom mužom, pažljivom proizvodnjom i onim što naš deda zove "razgovorom sa kravama". Jer kod nas, svaka krava ima ime, svaka ima karakter, i svaka zaslužuje poštovanje.
+        </p>
+
+        <p class="text-base md:text-lg text-deepBlue/90 leading-relaxed">
+          Verujemo da najbolji proizvodi dolaze od srećnih životinja, zdrave hrane i tradicionalnih metoda. Zato naše mleko nema aditiva - samo jutarnja svežina. Naši sirevi zru prirodno, po receptima naše bake Milice. A svaka boca pavlake nosi priču o pažnji, strpljenju i porodičnoj tradiciji koja se ne kupuje - nasleduje se.
+        </p>
+      </div>
+    </div>
+
+    <!-- Values Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="w-16 h-16 bg-lightIce rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primaryBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif font-semibold text-deepBlue mb-2">Tradicionalni metodi</h3>
+        <p class="text-deepBlue/80">Recepti i znanja preneta kroz tri generacije</p>
+      </div>
+
+      <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="w-16 h-16 bg-lightIce rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primaryBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif font-semibold text-deepBlue mb-2">Dobrobit životinja</h3>
+        <p class="text-deepBlue/80">Slobodno pašenje, zdrava ishrana, briga o svakoj kravi</p>
+      </div>
+
+      <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="w-16 h-16 bg-lightIce rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primaryBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif font-semibold text-deepBlue mb-2">Lokalna proizvodnja</h3>
+        <p class="text-deepBlue/80">Od naših pašnjaka do vaše trpeze - bez posrednika</p>
+      </div>
+    </div>
+
+    <!-- Stats (Optional) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+      <div class="p-6 bg-gradient-to-br from-lightIce to-lightIce/50 rounded-lg">
+        <div class="text-4xl md:text-5xl font-serif font-bold text-primaryBlue mb-2">35+</div>
+        <div class="text-deepBlue/80 font-medium">godina iskustva</div>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-lightIce to-lightIce/50 rounded-lg">
+        <div class="text-4xl md:text-5xl font-serif font-bold text-primaryBlue mb-2">15</div>
+        <div class="text-deepBlue/80 font-medium">hektara pašnjaka</div>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-lightIce to-lightIce/50 rounded-lg">
+        <div class="text-4xl md:text-5xl font-serif font-bold text-primaryBlue mb-2">500+</div>
+        <div class="text-deepBlue/80 font-medium">zadovoljnih porodica</div>
+      </div>
+    </div>
+  </div>
+</section>

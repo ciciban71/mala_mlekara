@@ -1,0 +1,40 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Serbian Latin character support */
+  body {
+    font-family: 'Inter', sans-serif;
+    color: theme('colors.deepBlue');
+    background-color: theme('colors.white');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+
+  /* Ensure proper rendering of Serbian special characters: ć, č, š, ž, đ */
+  * {
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  /* Custom gradient for placeholders - clean light ice blue tones */
+  .placeholder-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #e2f0fd 50%, #c5ddf5 100%);
+  }
+}

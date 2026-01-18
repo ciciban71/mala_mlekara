@@ -1,0 +1,49 @@
+---
+interface Props {
+  type: 'image' | 'video';
+  label: string;
+  aspectRatio?: string;
+  class?: string;
+}
+
+const { type, label, aspectRatio = '4/3', class: className = '' } = Astro.props;
+---
+
+<div
+  class={`placeholder-container relative overflow-hidden ${className}`}
+  style={`aspect-ratio: ${aspectRatio}`}
+  role={type === 'image' ? 'img' : 'region'}
+  aria-label={label}
+>
+  {type === 'video' && (
+    <div class="play-button absolute inset-0 flex items-center justify-center z-10">
+      <div class="bg-white/90 rounded-full p-4 md:p-5 shadow-lg hover:scale-110 transition-transform duration-300">
+        <svg class="w-12 h-12 md:w-16 md:h-16 text-primaryBlue" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+  )}
+  <span class="placeholder-label absolute bottom-4 left-4 right-4 text-center text-deepBlue text-sm md:text-base italic px-4 py-2 bg-white/80 rounded-lg backdrop-blur-sm z-10">
+    {label}
+  </span>
+</div>
+
+<style>
+  .placeholder-container {
+    background: linear-gradient(135deg, #ffffff 0%, #e2f0fd 50%, #c5ddf5 100%);
+    border: 2px dashed theme('colors.primaryBlue / 30%');
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .placeholder-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(14, 95, 170, 0.15);
+    border-color: theme('colors.primaryBlue');
+  }
+</style>
