@@ -60,6 +60,12 @@ Typography: Playfair Display (headings) + Inter (body)
 - **Placeholders:** Currently using `PlaceholderImage.astro` for media - replace with real images in `public/images/`
 - **Tone:** Warm, authentic family farm voice - not corporate
 
+## Workflow
+
+**Always push to GitHub after a successful build.** After making changes:
+1. Run `npm run build` to verify the build succeeds
+2. Commit and push changes to GitHub
+
 ## Key Files
 
 - `astro.config.mjs` - Site URL, base path, Tailwind integration
