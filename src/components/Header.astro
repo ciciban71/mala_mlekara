@@ -2,11 +2,11 @@
 // Header component with sticky navigation and mobile menu
 ---
 
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primaryBlue/20 transition-shadow duration-300" id="header">
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
   <nav class="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Glavna navigacija">
     <div class="flex items-center justify-between h-16 md:h-20">
       <!-- Logo / Farm Name -->
-      <a href="#pocetna" class="text-2xl md:text-3xl font-serif font-bold text-deepBlue hover:text-primaryBlue transition-colors duration-300">
+      <a href="#pocetna" class="text-2xl md:text-3xl font-serif font-bold text-white hover:text-white/80 transition-colors duration-300">
         Mala Mlekara Janić
       </a>
 
@@ -22,12 +22,12 @@
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="md:hidden p-2 rounded-lg hover:bg-primaryBlue/10 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primaryBlue"
+        class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white"
         aria-label="Otvori meni"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg class="w-6 h-6 text-deepBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
@@ -49,7 +49,7 @@
 
 <style>
   .nav-link {
-    @apply text-base font-medium text-deepBlue hover:text-primaryBlue transition-colors duration-300 relative;
+    @apply text-base font-medium text-white hover:text-white/80 transition-colors duration-300 relative;
   }
 
   .nav-link::after {
@@ -59,7 +59,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: theme('colors.primaryBlue');
+    background-color: white;
     transition: width 0.3s ease;
   }
 
@@ -68,11 +68,12 @@
   }
 
   .mobile-nav-link {
-    @apply block px-4 py-3 text-base font-medium text-deepBlue hover:bg-primaryBlue/10 hover:text-primaryBlue rounded-lg transition-all duration-300;
+    @apply block px-4 py-3 text-base font-medium text-white hover:bg-white/10 rounded-lg transition-all duration-300;
   }
 
-  /* Add shadow on scroll */
+  /* Scrolled state - solid primary blue background */
   .scrolled {
+    background-color: #046bd2;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 </style>
@@ -111,7 +112,7 @@
     });
   });
 
-  // Add shadow on scroll
+  // Add solid background on scroll
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 10) {
