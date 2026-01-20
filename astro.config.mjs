@@ -4,8 +4,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://USERNAME.github.io',
-  base: '/mala-mlekara-janic',
+  site: 'https://ciciban71.github.io',
+  base: '/mala_mlekara',
   integrations: [tailwind()],
   build: {
     assets: '_assets',
