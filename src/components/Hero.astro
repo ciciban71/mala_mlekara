@@ -1,56 +1,51 @@
 ---
-import PlaceholderImage from './PlaceholderImage.astro';
 ---
 
-<section id="pocetna" class="relative min-h-screen flex items-center bg-gradient-to-b from-white to-lightIce/30 pt-16">
-  <!-- Background Logo -->
-  <div
-    class="absolute inset-0 pointer-events-none opacity-[0.07]"
-    style="background-image: url('/mala_mlekara/images/Logo.svg'); background-repeat: no-repeat; background-position: center; background-size: 90%;"
-  ></div>
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <!-- Left Column - Text Content -->
-      <div class="space-y-6 md:space-y-8 text-center lg:text-left">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-deepBlue leading-tight">
-          Sveže sa naše farme, direktno do vašeg stola
-        </h1>
-        <p class="text-lg md:text-xl text-deepBlue/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-          Porodična tradicija kvalitetnih mlečnih proizvoda već tri generacije - iz srca Šumadije, sa ljubavlju
-        </p>
+<section id="pocetna" class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+  <!-- Background Video -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/mala_mlekara/videos/gazdinstvo.mp4" type="video/mp4" />
+  </video>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-          <a
-            href="#o-nama"
-            class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primaryBlue hover:bg-primaryBlue/90 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            Saznajte našu priču
-          </a>
-          <a
-            href="#proizvodi"
-            class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-deepBlue bg-white hover:bg-lightIce border-2 border-primaryBlue rounded-lg transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
-          >
-            Pogledajte proizvode
-          </a>
-        </div>
-      </div>
+  <!-- Dark Overlay for text readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
-      <!-- Right Column - Video Placeholder -->
-      <div class="order-first lg:order-last">
-        <PlaceholderImage
-          type="video"
-          label="Video snimak farme"
-          aspectRatio="16/9"
-          class="w-full"
-        />
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-tight drop-shadow-lg">
+        Sveže sa naše farme, direktno do vašeg stola
+      </h1>
+      <p class="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mt-6 md:mt-8 drop-shadow-md">
+        Porodična tradicija kvalitetnih mlečnih proizvoda već tri generacije - iz srca Šumadije, sa ljubavlju
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+        <a
+          href="#o-nama"
+          class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primaryBlue hover:bg-primaryBlue/90 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          Saznajte našu priču
+        </a>
+        <a
+          href="#proizvodi"
+          class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-white/20 hover:bg-white/30 backdrop-blur-sm border-2 border-white rounded-lg transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
+        >
+          Pogledajte proizvode
+        </a>
       </div>
     </div>
 
     <!-- Scroll Indicator -->
     <div class="flex justify-center mt-12 lg:mt-20 animate-bounce">
       <a href="#o-nama" aria-label="Skrolujte dole">
-        <svg class="w-6 h-6 text-primaryBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
       </a>
