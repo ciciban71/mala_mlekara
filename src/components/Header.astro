@@ -81,6 +81,12 @@
     background-color: #046bd2;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
+
+  /* Mobile menu open state - solid blue background */
+  .menu-open {
+    background-color: #046bd2;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
 </style>
 
 <script>
@@ -98,11 +104,17 @@
       menuIconOpen?.classList.add('hidden');
       menuIconClose?.classList.remove('hidden');
       mobileMenuButton?.setAttribute('aria-expanded', 'true');
+      // Add solid background when menu is open
+      header?.classList.add('menu-open');
     } else {
       mobileMenu?.classList.add('hidden');
       menuIconOpen?.classList.remove('hidden');
       menuIconClose?.classList.add('hidden');
       mobileMenuButton?.setAttribute('aria-expanded', 'false');
+      // Remove menu-open class only if not scrolled
+      if (window.scrollY <= 10) {
+        header?.classList.remove('menu-open');
+      }
     }
   });
 
@@ -114,6 +126,10 @@
       menuIconOpen?.classList.remove('hidden');
       menuIconClose?.classList.add('hidden');
       mobileMenuButton?.setAttribute('aria-expanded', 'false');
+      // Remove menu-open class only if not scrolled
+      if (window.scrollY <= 10) {
+        header?.classList.remove('menu-open');
+      }
     });
   });
 
