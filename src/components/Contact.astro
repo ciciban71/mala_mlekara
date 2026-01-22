@@ -1,5 +1,5 @@
 ---
-import PlaceholderImage from './PlaceholderImage.astro';
+import GoogleMap from './GoogleMap.astro';
 ---
 
 <section id="kontakt" class="py-16 md:py-24 bg-gradient-to-b from-lightIce/30 to-white">
@@ -82,28 +82,14 @@ import PlaceholderImage from './PlaceholderImage.astro';
         </div>
       </div>
 
-      <!-- Right Column - Map Placeholder -->
+      <!-- Right Column - Google Map -->
       <div>
-        <PlaceholderImage
-          type="image"
-          label="Мапа локације - Село Жича, Краљево"
-          aspectRatio="4/3"
-          class="w-full h-full"
+        <GoogleMap
+          latitude={43.7013693}
+          longitude={20.6513802}
+          placeName="Mala mlekara Janić"
+          title="Локација Мале Млекаре Јанић - Село Жича, Краљево"
         />
-        <!-- Comment for future Google Maps embed -->
-        <!--
-        Za Google Maps embed, zamenite PlaceholderImage sa:
-        <iframe
-          src="https://www.google.com/maps/embed?pb=..."
-          width="100%"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="rounded-xl shadow-md">
-        </iframe>
-        -->
       </div>
     </div>
 
