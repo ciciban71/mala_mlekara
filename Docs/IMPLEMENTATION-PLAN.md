@@ -603,7 +603,7 @@ All content must be in Serbian Cyrillic script. Key sections:
 **Technical:**
 - ✅ Astro project initialized with Tailwind CSS
 - ✅ All components built and responsive
-- ✅ Serbian language throughout (Latin script)
+- ✅ Serbian language throughout (Cyrillic script)
 - ✅ Professional placeholder styling
 - ✅ Deployed to GitHub Pages
 - ✅ Lighthouse score >90 all categories

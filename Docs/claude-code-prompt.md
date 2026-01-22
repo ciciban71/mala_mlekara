@@ -8,7 +8,7 @@ Build a complete, production-ready static website for a small Serbian dairy farm
 
 - **Framework**: Astro (latest stable version)
 - **Styling**: Tailwind CSS or vanilla CSS (your choice, but make it beautiful)
-- **Language**: All content, navigation, buttons, alt text, and meta tags must be in Serbian (Latin script)
+- **Language**: All content, navigation, buttons, alt text, and meta tags must be in Serbian (Cyrillic script)
 - **Deployment target**: GitHub Pages (configure `astro.config.mjs` accordingly with correct `base` and `site` settings)
 - **Performance**: Optimize for Core Web Vitals — lazy load images, minimize JS
 - **Responsive**: Mobile-first design, works flawlessly on all devices
@@ -174,7 +174,7 @@ dairy-farm/
 
 ## Final Checklist
 
-- [ ] All text content is in Serbian (Latin script) — double-check navigation, buttons, placeholders, alt texts
+- [ ] All text content is in Serbian (Cyrillic script) — double-check navigation, buttons, placeholders, alt texts
 - [ ] Responsive design tested at 320px, 768px, 1024px, 1440px
 - [ ] Video placeholders (minimum 2): hero + gallery/production
 - [ ] Image placeholders (minimum 8): about, products (4), gallery (6+)

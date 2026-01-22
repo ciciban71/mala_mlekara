@@ -121,9 +121,9 @@ mala-mlekara-janic/
 └── README.md
 ```
 
-### Sadržaj u srpskom jeziku (latinica)
+### Sadržaj u srpskom jeziku (ćirilica)
 
-Sav tekst je na srpskom jeziku sa pravilnim znakovima (ć, č, š, ž, đ):
+Sav tekst je na srpskom jeziku ćirilicom (ћ, ч, ш, ж, ђ):
 - Meta tagovi
 - Navigacijski linkovi
 - Headeri i naslovi
