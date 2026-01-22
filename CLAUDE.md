@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Mala Mlekara Janić is a static website for a Serbian family dairy farm built with Astro and Tailwind CSS. All content is in **Serbian Latin script (sr-Latn)** - never use Cyrillic.
+Мала Млекара Јанић is a static website for a Serbian family dairy farm built with Astro and Tailwind CSS. All content is in **Serbian Cyrillic script (sr-Cyrl)**.
 
 **Live site:** https://ciciban71.github.io/mala_mlekara/
 
@@ -56,7 +56,7 @@ Typography: Playfair Display (headings) + Inter (body)
 
 ## Content Guidelines
 
-- **Language:** All text must be Serbian Latin script (ć, č, š, ž, đ supported)
+- **Language:** All text must be Serbian Cyrillic script (ћ, ч, ш, ж, ђ supported)
 - **Placeholders:** Currently using `PlaceholderImage.astro` for media - replace with real images in `public/images/`
 - **Tone:** Warm, authentic family farm voice - not corporate
 
@@ -70,4 +70,4 @@ Typography: Playfair Display (headings) + Inter (body)
 
 - `astro.config.mjs` - Site URL, base path, Tailwind integration
 - `tailwind.config.mjs` - Custom color palette and fonts
-- `src/layouts/Layout.astro` - HTML structure with `lang="sr-Latn"` and Serbian SEO meta
+- `src/layouts/Layout.astro` - HTML structure with `lang="sr-Cyrl"` and Serbian SEO meta

@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
   }
 
-  /* Serbian Latin character support */
+  /* Serbian Cyrillic character support */
   body {
     font-family: 'Inter', sans-serif;
     color: theme('colors.deepBlue');

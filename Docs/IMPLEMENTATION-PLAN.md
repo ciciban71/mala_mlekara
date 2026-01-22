@@ -5,11 +5,11 @@
 
 ## 1. Project Overview
 
-**Goal:** Build a complete, production-ready static website for a small Serbian dairy farm using Astro framework. The site must be entirely in Serbian (Latin script), optimized for GitHub Pages, with authentic warmth reflecting a family business.
+**Goal:** Build a complete, production-ready static website for a small Serbian dairy farm using Astro framework. The site must be entirely in Serbian (Cyrillic script), optimized for GitHub Pages, with authentic warmth reflecting a family business.
 
 **Current State:** Greenfield project - only documentation files exist in `/Users/ciciban/Documents/DEV/Business/Mala_mlekara_Janic/Momo/`
 
-**Target:** Fully responsive, accessible, performant single-page website with all content in Serbian Latin script, ready for GitHub Pages deployment.
+**Target:** Fully responsive, accessible, performant single-page website with all content in Serbian Cyrillic script, ready for GitHub Pages deployment.
 
 ---
 
@@ -126,7 +126,7 @@
 #### 2.1 Layout.astro (`src/layouts/Layout.astro`)
 - HTML structure with Serbian metadata:
   ```html
-  <html lang="sr-Latn">
+  <html lang="sr-Cyrl">
   <title>Mala Mlekara Janić - Sveži mlečni proizvodi iz Šumadije</title>
   <meta name="description" content="Porodična farma koja već tri generacije proizvodi najkvalitetnije mlečne proizvode...">
   ```
@@ -512,7 +512,7 @@ mala-mlekara-janic/
 
 ## 6. Serbian Content Summary
 
-All content must be in Serbian Latin script. Key sections:
+All content must be in Serbian Cyrillic script. Key sections:
 
 ### Navigation
 - Početna, O nama, Proizvodi, Galerija, Kontakt
@@ -549,8 +549,8 @@ All content must be in Serbian Latin script. Key sections:
 ## 7. Verification & Testing
 
 ### Final Checklist
-- [ ] All text in Serbian (Latin script) - no Cyrillic, no English
-- [ ] Serbian special characters render correctly (ć, č, š, ž, đ)
+- [ ] All text in Serbian (Cyrillic script) - no Latin, no English
+- [ ] Serbian Cyrillic characters render correctly (ћ, ч, ш, ж, ђ)
 - [ ] Responsive at all breakpoints (320px - 1440px+)
 - [ ] Placeholders look professional (not broken)
 - [ ] Video placeholders have play button overlays
@@ -644,7 +644,7 @@ All content must be in Serbian Latin script. Key sections:
 3. **Single-page** - Simple navigation, cohesive story, fast loading
 4. **GitHub Pages** - Free hosting, automatic deployment, reliable
 5. **Placeholders** - Professional appearance while awaiting real media
-6. **Serbian Latin** - Authentic to target audience, supports special characters
+6. **Serbian Cyrillic** - Authentic to target audience, supports special characters
 
 ### Key Considerations
 - Serbian typography requires Unicode support (all modern fonts support this)

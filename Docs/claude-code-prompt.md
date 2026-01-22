@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Build a complete, production-ready static website for a small Serbian dairy farm using **Astro (latest version - use `npm create astro@latest`)**. The website must be entirely in **Serbian language using Latin script (Srpski - latinica)** — this is critical, not Cyrillic.
+Build a complete, production-ready static website for a small Serbian dairy farm using **Astro (latest version - use `npm create astro@latest`)**. The website must be entirely in **Serbian language using Cyrillic script (Српски - ћирилица)**.
 
 ## Technical Requirements
 
@@ -110,7 +110,7 @@ Avoid: Generic corporate blue, stock photo aesthetics, overly polished tech star
 - Copyright: "© 2025 [Naziv Farme]. Sva prava zadržana."
 - Optional: "Izrada sajta" credit line
 
-## Content Guidelines (Serbian Latin)
+## Content Guidelines (Serbian Cyrillic)
 
 Use natural, warm Serbian language. Here's example content to include or adapt:
 
