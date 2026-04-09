@@ -4,20 +4,31 @@ import PlaceholderImage from './PlaceholderImage.astro';
 interface Props {
   title: string;
   description: string;
+  ingredients?: string;
   varieties?: string;
+  image?: string;
   placeholderLabel: string;
 }
 
-const { title, description, varieties, placeholderLabel } = Astro.props;
+const { title, description, ingredients, varieties, image, placeholderLabel } = Astro.props;
 ---
 
 <article class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-  <PlaceholderImage
-    type="image"
-    label={placeholderLabel}
-    aspectRatio="1/1"
-    class="w-full"
-  />
+  {image ? (
+    <img
+      src={`${import.meta.env.BASE_URL}/${image}`}
+      alt={placeholderLabel}
+      class="w-full aspect-square object-cover"
+      loading="lazy"
+    />
+  ) : (
+    <PlaceholderImage
+      type="image"
+      label={placeholderLabel}
+      aspectRatio="1/1"
+      class="w-full"
+    />
+  )}
   <div class="p-6 space-y-3">
     <h3 class="text-2xl font-serif font-semibold text-deepBlue group-hover:text-primaryBlue transition-colors duration-300">
       {title}
@@ -30,5 +41,10 @@ const { title, description, varieties, placeholderLabel } = Astro.props;
     <p class="text-deepBlue/80 leading-relaxed">
       {description}
     </p>
+    {ingredients && (
+      <p class="text-deepBlue/80 leading-relaxed font-medium">
+        Састојци: {ingredients}
+      </p>
+    )}
   </div>
 </article>
